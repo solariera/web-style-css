@@ -4,3 +4,4 @@ export { blurStyle, borderStyle, colorStyle, marginStyle, opacityStyle } from '.
 export { paddingStyle, positionStyle, roundStyle, sizeStyle } from './object';
 export { fontColorStyle, fontFamilyStyle, fontSizeStyle } from './text';
 export { placementStyle, letterSpacingStyle, textStrokeStyle } from './text';
+export { overflowStyle } from './web';

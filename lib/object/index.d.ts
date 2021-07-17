@@ -1,6 +1,7 @@
 export { blurStyle } from './blurStyle';
 export { borderStyle } from './borderStyle';
 export { colorStyle } from './colorStyle';
+export { floatStyle } from './floatStyle';
 export { marginStyle } from './marginStyle';
 export { opacityStyle } from './opacityStyle';
 export { paddingStyle } from './paddingStyle';

@@ -2,15 +2,15 @@ import { css } from '../../css';
 import { getFloatStyle } from './getFloatStyle';
 
 type FloatType = {
-  floarDirection?: string;
+  floatDirection?: string;
 };
 
 export const floatStyle = (props: FloatType) => {
-  const { floarDirection } = props;
+  const { floatDirection } = props;
 
-  if (!floarDirection) return css``;
+  if (!floatDirection) return css``;
 
-  const direction: string = getFloatStyle(floarDirection);
+  const direction: string = getFloatStyle(floatDirection);
 
   const styleString = css`
     float: ${direction};

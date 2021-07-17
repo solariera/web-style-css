@@ -1,5 +1,5 @@
 declare type FloatType = {
-    floarDirection?: string;
+    floatDirection?: string;
 };
 export declare const floatStyle: (props: FloatType) => import("styled-components").FlattenSimpleInterpolation;
 export {};

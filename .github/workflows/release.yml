@@ -24,7 +24,7 @@ jobs:
       - name: check version and add tag
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          REPO: "@solariera/${{github.repository}}"
+          REPO: ${{github.repository}}
           COMMIT: ${{github.sha}}
         run: ./release.sh
 #      - name: test

@@ -18,15 +18,15 @@ jobs:
         with:
           node-version: '16.7.0'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: yarn install
 
-      - name: Install can-npm-publish and dependencies
+      - name: Install can-npm-publish And Dependencies
         run: |
           npm install can-npm-publish
           npm ci
 
-      - name: Check version and add tag
+      - name: Check Version And Add Tag
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           REPO: ${{github.repository}}

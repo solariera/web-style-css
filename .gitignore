@@ -2,7 +2,6 @@ coverage/
 dist/
 Podfile.lock
 *.code-workspace
-yarn.lock
 
 # OSX
 #

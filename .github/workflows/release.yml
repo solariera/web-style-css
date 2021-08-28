@@ -21,6 +21,8 @@ jobs:
         run: |
           npm install can-npm-publish
           npm ci
+      - name: Install Dependencies
+        run: yarn install
       - name: check version and add tag
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -30,7 +32,6 @@ jobs:
 #      - name: test
 #        run: npm run test
       - name: build
-        run: yarn
         run: yarn build
       - name: release
         run: npm publish

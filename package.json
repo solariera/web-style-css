@@ -1,6 +1,6 @@
 {
   "name": "@solariera/web-style-css",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Style functions for ReactNative",
   "author": "Solariera <always@solariera.com> (https://github.com/solariera)",
   "license": "MIT",
@@ -18,7 +18,8 @@
     "url": "https://github.com/solariera/web-style-css/issues"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

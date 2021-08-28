@@ -24,12 +24,13 @@ jobs:
       - name: check version and add tag
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          REPO: ${{github.repository}}
+          REPO: "@solariera/${{github.repository}}"
           COMMIT: ${{github.sha}}
         run: ./release.sh
 #      - name: test
 #        run: npm run test
       - name: build
+        run: yarn
         run: yarn build
       - name: release
         run: npm publish

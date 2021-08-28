@@ -4,6 +4,7 @@ type FontSizeType = {
   fontWeight?: number;
   fontSize?: number;
   unit?: string;
+  [key: string]: unknown;
 };
 
 export const fontSizeStyle = (props: FontSizeType) => {

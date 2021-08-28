@@ -4,6 +4,7 @@ type ImagePositionType = {
   x?: number;
   y?: number;
   unit?: number;
+  [key: string]: unknown;
 };
 
 export const imagePositionStyle = (props: ImagePositionType) => {

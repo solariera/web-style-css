@@ -3,6 +3,7 @@ import { getOverflowStyle } from './getOverflowStyle';
 
 type OverflowType = {
   overflowType?: string;
+  [key: string]: unknown;
 };
 
 export const overflowStyle = (props: OverflowType) => {

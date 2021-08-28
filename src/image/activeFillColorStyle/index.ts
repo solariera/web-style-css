@@ -4,6 +4,7 @@ import { css } from '../../css';
 type ColorType = {
   activeColor?: string;
   activeColorAlpha?: number;
+  [key: string]: unknown;
 };
 
 export const activeFillColorStyle = (props: ColorType) => {

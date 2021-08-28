@@ -4,6 +4,7 @@ import { css } from '../../css';
 type ColorType = {
   fillColor?: string;
   fillColorAlpha?: number;
+  [key: string]: unknown;
 };
 
 export const fillColorStyle = (props: ColorType) => {

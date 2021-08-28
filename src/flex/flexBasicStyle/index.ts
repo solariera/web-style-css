@@ -6,6 +6,7 @@ type FlexBasicType = {
   flexDirection?: string;
   flexWrap?: string;
   styleDisplay?: string;
+  [key: string]: unknown;
 };
 
 export const flexBasicStyle = (props: FlexBasicType) => {

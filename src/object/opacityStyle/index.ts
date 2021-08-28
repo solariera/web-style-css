@@ -2,6 +2,7 @@ import { css } from '../../css';
 
 type OpacityType = {
   opacity?: number;
+  [key: string]: unknown;
 };
 
 export const opacityStyle = (props: OpacityType) => {

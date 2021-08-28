@@ -3,6 +3,7 @@ import { getFloatStyle } from './getFloatStyle';
 
 type FloatType = {
   floatDirection?: string;
+  [key: string]: unknown;
 };
 
 export const floatStyle = (props: FloatType) => {

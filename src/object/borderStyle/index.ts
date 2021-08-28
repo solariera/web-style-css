@@ -12,6 +12,7 @@ type BorderType = {
   borderTop?: boolean;
   borderBottom?: boolean;
   unit?: string;
+  [key: string]: unknown;
 };
 
 export const borderStyle = (props: BorderType) => {

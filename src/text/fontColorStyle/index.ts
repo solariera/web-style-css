@@ -4,6 +4,7 @@ import { css } from '../../css';
 type FontColorType = {
   fontColor?: string;
   fontColorAlpha?: number;
+  [key: string]: unknown;
 };
 
 export const fontColorStyle = (props: FontColorType) => {

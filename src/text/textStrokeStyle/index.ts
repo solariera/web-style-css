@@ -5,6 +5,7 @@ type StrokeType = {
   strokeWidth?: number;
   strokeColor?: string;
   strokeColorAlpha?: number;
+  [key: string]: unknown;
 };
 
 export const textStrokeStyle = (props: StrokeType) => {

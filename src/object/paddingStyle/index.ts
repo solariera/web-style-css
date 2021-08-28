@@ -6,6 +6,7 @@ type PaddingType = {
   paddingTop?: number;
   paddingBottom?: number;
   unit?: string;
+  [key: string]: unknown;
 };
 
 export const paddingStyle = (props: PaddingType) => {

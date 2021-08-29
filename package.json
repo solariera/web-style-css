@@ -1,6 +1,6 @@
 {
   "name": "@solariera/web-style-css",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Style functions for ReactNative",
   "author": "Solariera <always@solariera.com> (https://github.com/solariera)",
   "license": "MIT",

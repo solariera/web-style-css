@@ -2,17 +2,17 @@ import { rgba } from '@solariera/rgba-syntax';
 import { css } from '../../css';
 
 type ColorType = {
-  activeColor?: string;
-  activeColorAlpha?: number;
+  activeFillColor?: string;
+  activeFillColorAlpha?: number;
   [key: string]: unknown;
 };
 
 export const activeFillColorStyle = (props: ColorType) => {
-  const { activeColor, activeColorAlpha = 1 } = props;
+  const { activeFillColor, activeFillColorAlpha = 1 } = props;
 
-  if (activeColor === undefined) return css``;
+  if (activeFillColor === undefined) return css``;
 
-  const fillColorRgba: string = rgba(activeColor, activeColorAlpha);
+  const fillColorRgba: string = rgba(activeFillColor, activeFillColorAlpha);
 
   const styleString = css`
     fill: ${fillColorRgba};

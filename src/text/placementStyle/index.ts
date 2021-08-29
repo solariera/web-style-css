@@ -4,7 +4,6 @@ type PlacementType = {
   height?: number;
   textAlign?: string;
   unit?: string;
-  [key: string]: unknown;
 };
 
 export const placementStyle = (props: PlacementType) => {

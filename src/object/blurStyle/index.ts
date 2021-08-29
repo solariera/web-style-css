@@ -3,7 +3,6 @@ import { css } from '../../css';
 type BlurType = {
   blur?: number;
   unit?: string;
-  [key: string]: unknown;
 };
 
 export const blurStyle = (props: BlurType) => {

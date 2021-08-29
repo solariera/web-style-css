@@ -4,7 +4,6 @@ import { getBackgroundRepeatMode } from './getBackgroundRepeatMode';
 type ImageViewType = {
   base64: string;
   repeat?: string;
-  [key: string]: unknown;
 };
 
 export const imageViewStyle = (props: ImageViewType) => {

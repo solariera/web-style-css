@@ -3,7 +3,6 @@ import { css } from '../../css';
 type LetterSpacingType = {
   letterSpacing?: number;
   unit?: string;
-  [key: string]: unknown;
 };
 
 export const letterSpacingStyle = (props: LetterSpacingType) => {

@@ -6,7 +6,6 @@ type PositionType = {
   top?: number;
   bottom?: number;
   unit?: string;
-  [key: string]: unknown;
 };
 
 export const positionStyle = (props: PositionType) => {

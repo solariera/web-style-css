@@ -6,7 +6,6 @@ type MarginType = {
   marginTop?: number;
   marginBottom?: number;
   unit?: string;
-  [key: string]: unknown;
 };
 
 export const marginStyle = (props: MarginType) => {

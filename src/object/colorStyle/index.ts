@@ -4,7 +4,6 @@ import { css } from '../../css';
 type ColorType = {
   bgColor?: string;
   bgColorAlpha?: number;
-  [key: string]: unknown;
 };
 
 export const colorStyle = (props: ColorType) => {

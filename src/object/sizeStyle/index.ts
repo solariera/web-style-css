@@ -4,7 +4,6 @@ type SizeType = {
   width?: number;
   height?: number;
   unit?: string;
-  [key: string]: unknown;
 };
 
 export const sizeStyle = (props: SizeType) => {

@@ -7,7 +7,6 @@ type FlexContainerType = {
   justifyContent?: string;
   alignContent?: string;
   alignItems?: string;
-  [key: string]: unknown;
 };
 
 /**

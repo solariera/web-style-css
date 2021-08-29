@@ -8,7 +8,6 @@ type FlexItemsType = {
   flexItemBasis?: string | number;
   flexItemAlign?: string;
   flexItemOrder?: number;
-  [key: string]: unknown;
 };
 
 const flexItemsStyle = (props: FlexItemsType) => {

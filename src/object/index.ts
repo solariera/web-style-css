@@ -7,4 +7,5 @@ export { opacityStyle } from './opacityStyle';
 export { paddingStyle } from './paddingStyle';
 export { positionStyle } from './positionStyle';
 export { roundStyle } from './roundStyle';
+export { scaleStyle } from './scaleStyle';
 export { sizeStyle } from './sizeStyle';

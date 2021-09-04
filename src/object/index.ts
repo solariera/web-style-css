@@ -1,3 +1,4 @@
+export { bgColorStyle } from './bgColorStyle';
 export { blurStyle } from './blurStyle';
 export { borderStyle } from './borderStyle';
 export { colorStyle } from './colorStyle';

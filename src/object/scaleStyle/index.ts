@@ -1,19 +1,19 @@
 import { css } from '../../css';
 
 type ScaleType = {
-  scaleX?: number;
+  scale?: number;
   scaleY?: number;
-  scaleOrigin?: string;
+  origin?: string;
 };
 
 export const scaleStyle = (props: ScaleType) => {
-  const { scaleX, scaleY, scaleOrigin = 'center' } = props;
+  const { scale, scaleY, origin = 'center' } = props;
 
-  if (scaleX === undefined) return css``;
+  if (scale === undefined) return css``;
 
   const styleString = css`
-    transform: scale(${scaleX}, ${scaleY || scaleX}); /* Equal to scaleX(2) scaleY(0.5) */
-    transform-origin: ${scaleOrigin};
+    transform: scale(${scale}, ${scaleY || scale}); /* Equal to scaleX(2) scaleY(0.5) */
+    transform-origin: ${origin};
   `;
 
   return styleString;

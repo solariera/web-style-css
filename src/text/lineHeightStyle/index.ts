@@ -8,8 +8,10 @@ type LineHeightType = {
 export const lineHeightStyle = (props: LineHeightType) => {
   const { lineHeight, unit = 'px' } = props;
 
+  if (lineHeight === undefined) return css``;
+
   const styleString = css`
-    ${lineHeight !== undefined ? `line-height: ${lineHeight + unit};` : ``}
+    line-height: ${lineHeight + unit};
   `;
 
   return styleString;

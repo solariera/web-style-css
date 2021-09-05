@@ -21,10 +21,10 @@ export const paddingStyle = (props: PaddingType) => {
   }
 
   const styleString = css`
-    ${paddingLeft !== undefined && `padding-left: ${paddingLeft + unit};`}
-    ${paddingRight !== undefined && `padding-right: ${paddingRight + unit};`}
-    ${paddingTop !== undefined && `padding-top: ${paddingTop + unit};`}
-    ${paddingBottom !== undefined && `padding-bottom: ${paddingBottom + unit};`}
+    padding-left: ${(paddingLeft !== undefined ? paddingLeft : 0) + unit};
+    padding-right: ${(paddingRight !== undefined ? paddingRight : 0) + unit};
+    padding-top: ${(paddingTop !== undefined ? paddingTop : 0) + unit};
+    padding-bottom: ${(paddingBottom !== undefined ? paddingBottom : 0) + unit};
   `;
 
   return styleString;

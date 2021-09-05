@@ -2,15 +2,15 @@ import { css } from '../../css';
 import { getOverflowStyle } from './getOverflowStyle';
 
 type OverflowType = {
-  overflowType?: string;
+  overflow?: string;
 };
 
 export const overflowStyle = (props: OverflowType) => {
-  const { overflowType } = props;
+  const { overflow } = props;
 
-  if (!overflowType) return css``;
+  if (!overflow) return css``;
 
-  const type: string = getOverflowStyle(overflowType);
+  const type: string = getOverflowStyle(overflow);
 
   const styleString = css`
     overflow: ${type};

@@ -6,6 +6,7 @@ export { letterSpacingStyle } from './letterSpacingStyle';
 export { lineHeightStyle } from './lineHeightStyle';
 export { textAlignStyle } from './textAlignStyle';
 export { textStrokeStyle } from './textStrokeStyle';
+export { whiteSpaceStyle } from './whiteSpaceStyle';
 
 /**
  * Alias: Soon remove

@@ -47,20 +47,19 @@ yarn add @solariera/web-style-css
 
 ### 2-4. Object
 
-| Functions     | Parameters                                                                                                    |
-| :------------ | :------------------------------------------------------------------------------------------------------------ |
-| bgColorStyle  | `bgColor?: string` `bgColorAlpha?: number`                                                                    |
-| blurStyle     | `blur?: number` `unit?: string`                                                                               |
-| borderStyle   | `borderWidth?: number` `borderColor?: string` `borderColorAlpha?: number` `borderStyle?: string`              |
-|               | `borderLeft?: boolean` `borderRight?: boolean` `borderTop?: boolean` `borderBottom?: boolean` `unit?: string` |
-| floatStyle    | `floatDirection?: string`                                                                                     |
-| marginStyle   | `marginLeft?: number` `marginRight?: number` `marginTop?: number` `marginBottom?: number` `unit?: string`     |
-| opacityStyle  | `opacity?: number`                                                                                            |
-| paddingStyle  | `paddingLeft?: number` `paddingRight?: number` `paddingTop?: number` `paddingBottom?: number` `unit?: string` |
-| positionStyle | `position?: string` `left?: number` `right?: number` `top?: number` `bottom?: number` `unit?: string`         |
-| roundStyle    | `roundSize?: number \| number[]` `unit?: string`                                                              |
-| scaleStyle    | `scale?: number` `scaleY?: number` `origin?: string`                                                          |
-| sizeStyle     | `width?: number` `height?: number` `unit?: string`                                                            |
+| Functions     | Parameters                                                                                                                                                                                                     |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| bgColorStyle  | `bgColor?: string` `bgColorAlpha?: number`                                                                                                                                                                     |
+| blurStyle     | `blur?: number` `unit?: string`                                                                                                                                                                                |
+| borderStyle   | `borderWidth?: number` `borderColor?: string` `borderColorAlpha?: number` `borderStyle?: string` `borderLeft?: boolean` `borderRight?: boolean` `borderTop?: boolean` `borderBottom?: boolean` `unit?: string` |
+| floatStyle    | `floatDirection?: string`                                                                                                                                                                                      |
+| marginStyle   | `marginLeft?: number` `marginRight?: number` `marginTop?: number` `marginBottom?: number` `unit?: string`                                                                                                      |
+| opacityStyle  | `opacity?: number`                                                                                                                                                                                             |
+| paddingStyle  | `paddingLeft?: number` `paddingRight?: number` `paddingTop?: number` `paddingBottom?: number` `unit?: string`                                                                                                  |
+| positionStyle | `position?: string` `left?: number` `right?: number` `top?: number` `bottom?: number` `unit?: string`                                                                                                          |
+| roundStyle    | `roundSize?: number \| number[]` `unit?: string`                                                                                                                                                               |
+| scaleStyle    | `scale?: number` `scaleY?: number` `origin?: string`                                                                                                                                                           |
+| sizeStyle     | `width?: number` `height?: number` `unit?: string`                                                                                                                                                             |
 
 ### 2-5. Text
 

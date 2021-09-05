@@ -10,7 +10,7 @@ type FlexItemsType = {
   order?: number;
 };
 
-const flexItemsStyle = (props: FlexItemsType) => {
+export const flexItemsStyle = (props: FlexItemsType) => {
   const { flexGrow, flexShrink, flexBasis, alignSelf, order } = props;
 
   /**
@@ -33,5 +33,3 @@ const flexItemsStyle = (props: FlexItemsType) => {
 
   return styleString;
 };
-
-export { flexItemsStyle };

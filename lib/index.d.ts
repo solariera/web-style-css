@@ -1,7 +1,13 @@
 export { flexBasicStyle, flexContainerStyle, flexItemsStyle } from './flex';
-export { fillColorStyle, imagePositionStyle, imageSizeStyle, imageViewStyle } from './image';
-export { blurStyle, borderStyle, colorStyle, floatStyle, marginStyle, opacityStyle } from './object';
-export { paddingStyle, positionStyle, roundStyle, sizeStyle } from './object';
-export { fontColorStyle, fontFamilyStyle, fontSizeStyle } from './text';
-export { placementStyle, letterSpacingStyle, textStrokeStyle } from './text';
-export { overflowStyle } from './web';
+export { imagePositionStyle, imageSizeStyle, imageViewStyle } from './image';
+export { listTypeStyle, overflowStyle } from './misc';
+export { bgColorStyle, blurStyle, borderStyle, floatStyle, marginStyle, opacityStyle } from './object';
+export { paddingStyle, positionStyle, roundStyle, scaleStyle, sizeStyle } from './object';
+export { fontColorStyle, fontFamilyStyle, fontSizeStyle, fontWeightStyle } from './text';
+export { letterSpacingStyle, lineHeightStyle } from './text';
+export { textAlignStyle, textStrokeStyle, whiteSpaceStyle } from './text';
+/**
+ * Alias: Soon remove
+ */
+export { colorStyle } from './object';
+export { placementStyle } from './text';

@@ -1,5 +1,7 @@
+import { rgba } from '@solariera/rgba-syntax';
 import { css } from '../../css';
-import { getListStyleType } from './getListStyleType';
+import { getMsScrollBarType } from './getMsScrollBarType';
+import { getScrollBarWidthType } from './getScrollBarWidthType';
 
 type ScrollBarType = {
   scrollBarWidth?: number;
@@ -9,19 +11,41 @@ type ScrollBarType = {
   scrollBarThumbColor?: string;
   scrollBarThumbColorAlpha?: number;
   scrollBarUnit?: number;
+  msScrollBar?: string;
+  ffScrollBar?: string;
 };
 
 export const scrollBarStyle = (props: ScrollBarType) => {
+  const {
+    scrollBarWidth,
+    scrollBarHeight,
+    scrollBarColor,
+    scrollBarColorAlpha,
+    scrollBarThumbColor,
+    scrollBarThumbColorAlpha,
+    scrollBarUnit = 'px',
+    msScrollBar,
+    ffScrollBar,
+  } = props;
+
+  const scrollBarRgba = scrollBarColor ? rgba(scrollBarColor, scrollBarColorAlpha) : undefined;
+  const scrollBarThumbRgba = scrollBarThumbColor ? rgba(scrollBarThumbColor, scrollBarThumbColorAlpha) : undefined;
+
+  const msScrollBarType = getMsScrollBarType(msScrollBar);
+  const ffScrollBarType = getScrollBarWidthType(ffScrollBar);
+
   const styleString = css`
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    ${ffScrollBarType ? `scrollbar-width: ` + ffScrollBarType + `;` : ``}
+    ${msScrollBarType ? `-ms-overflow-style: ` + msScrollBarType + `;` : ``}
+
     &::-webkit-scrollbar {
-      width: 4px;
-      height: 64px;
-      background-color: #cccccc;
+      ${scrollBarWidth ? `height: ` + scrollBarWidth + scrollBarUnit + `;` : ``}
+      ${scrollBarHeight ? `height: ` + scrollBarHeight + scrollBarUnit + `;` : ``}
+      ${scrollBarRgba ? `background-color: ` + scrollBarRgba + `;` : ``}
     }
+
     &::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.5);
+      ${scrollBarThumbRgba ? `background-color: ` + scrollBarThumbRgba + `;` : ``}
     }
   `;
 

@@ -1,2 +1,2 @@
 export { listTypeStyle } from './listTypeStyle';
-export { overflowStyle } from './overflowStyle';
+export { scrollBarStyle } from './scrollBarStyle';

@@ -1,4 +1,4 @@
-type ListStyleType =
+type ListType =
   | 'none'
   | 'disc'
   | 'circle'
@@ -21,7 +21,7 @@ type ListStyleType =
   | 'armenian'
   | 'georgian';
 
-export const getListStyleType = (type?: string): ListStyleType | undefined => {
+export const getListStyleType = (type?: string): ListType | undefined => {
   switch (type) {
     case 'none':
       return 'none' as const;

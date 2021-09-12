@@ -40,10 +40,12 @@ yarn add @solariera/web-style-css
 
 ### 2-3. Misc
 
-| Functions     | Parameters               |
-| :------------ | :----------------------- |
-| listTypeStyle | `listStyleType?: string` |
-| overflowStyle | `overflow?: string`      |
+| Functions       | Parameters                                                            |
+| :-------------- | :-------------------------------------------------------------------- |
+| cursorStyle     | `cursor?: string`                                                     |
+| listTypeStyle   | `listStyleType?: string`                                              |
+| overflowStyle   | `overflow?: string`                                                   |
+| transitionStyle | `duration?: number` `timingFunction?: string` `durationUnit?: string` |
 
 ### 2-4. Object
 

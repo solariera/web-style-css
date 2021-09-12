@@ -1,6 +1,6 @@
 export { flexBasicStyle, flexContainerStyle, flexItemsStyle } from './flex';
 export { imagePositionStyle, imageSizeStyle, imageViewStyle } from './image';
-export { listTypeStyle, scrollBarStyle } from './misc';
+export { cursorStyle, listTypeStyle, scrollBarStyle, transitionStyle } from './misc';
 export { bgColorStyle, blurStyle, borderStyle, floatStyle, marginStyle } from './object';
 export { overflowStyle, opacityStyle, paddingStyle, positionStyle } from './object';
 export { roundStyle, scaleStyle, sizeStyle } from './object';

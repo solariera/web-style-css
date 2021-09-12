@@ -6,7 +6,7 @@ type CursorStyleType = {
 };
 
 export const cursorStyle = (props: CursorStyleType) => {
-  const { cursor = 'none' } = props;
+  const { cursor } = props;
 
   /**
    * cursorの値を取得する

@@ -1,11 +1,11 @@
 import { css } from '../../css';
 import { getListStyleType } from './getListStyleType';
 
-type FlexItemsType = {
+type ListStyleType = {
   listStyleType?: string;
 };
 
-export const listTypeStyle = (props: FlexItemsType) => {
+export const listTypeStyle = (props: ListStyleType) => {
   const { listStyleType = 'none' } = props;
 
   /**
